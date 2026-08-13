@@ -1,52 +1,67 @@
-<p align="center"><img src="logo.png" width="140" alt="Acolyte"></p>
+<p align="center"><img src="logo.png" width="160" alt="Acolyte"></p>
 
-# Acolyte
+<h1 align="center">Acolyte</h1>
 
-**Votre Claude, dans votre poche — sur VOTRE serveur.**
+<p align="center"><b>Votre Claude, dans votre poche.<br>Sur VOTRE serveur. Avec VOS données. Point.</b></p>
 
-Acolyte relie votre ordinateur, un petit serveur qui vous appartient et votre
-téléphone : vous discutez avec Claude depuis votre téléphone, et vos projets
-voyagent entre les trois, chez vous, sur votre réseau privé. Pas de service
-tiers : votre compte Claude, votre serveur, vos données.
-
-## Installer
-
-1. Téléchargez le dernier `acolyte-installateur-<version>.exe` dans
-   [**Releases**](../../releases) — c'est le seul fichier à prendre.
-2. Double-cliquez : l'installateur vous guide de bout en bout, en 19 étapes
-   claires (ordinateur, serveur, téléphone). Il audite d'abord, propose un
-   plan, sauvegarde avant d'agir, et ne modifie jamais rien sans l'annoncer.
-
-### L'avertissement bleu de Windows (normal)
-
-L'installateur n'est pas signé numériquement : au premier double-clic,
-Windows SmartScreen affiche « Windows a protégé votre ordinateur ».
-
-> Cliquez **« Informations complémentaires »**, puis **« Exécuter quand
-> même »**.
-
-C'est tout. Cet avertissement apparaît pour toute application indépendante
-non signée — il ne dit rien de la sûreté du programme.
-
-## Ce qu'il vous faut
-
-- Un PC **Windows 10/11**, un téléphone **Android**, et trois comptes que
-  l'installateur vous aide à préparer : un compte **Claude** avec abonnement,
-  un petit **VPS** Ubuntu/Debian (~5-7 €/mois), un compte **Tailscale**
-  (gratuit — le réseau privé du foyer).
-- L'installateur vérifie le reste et installe ce qui manque.
-
-## Principes de la maison
-
-- **Rien n'est modifié sans être annoncé**, et toute action est précédée
-  d'une sauvegarde datée.
-- **Vos secrets ne voyagent pas** : les tokens vivent sur vos machines,
-  jamais dans une URL, jamais dans un rapport.
-- **Le stress test est gratuit** : l'installation s'éprouve à blanc, sans
-  consommer votre abonnement.
+<p align="center">
+  <a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/rakitchc-art/acolyte?label=t%C3%A9l%C3%A9charger&color=2563EB&style=for-the-badge" alt="Télécharger"></a>
+</p>
 
 ---
 
-*Ce dépôt porte les versions publiées d'Acolyte. Les incidents peuvent être
-signalés dans [Issues](../../issues) — les rapports générés par
-l'installateur sont nettoyés de tout secret avant de vous être montrés.*
+## Et si votre assistant vous suivait partout ?
+
+Vous travaillez avec Claude sur votre PC. Puis vous partez — et tout reste derrière vous.
+
+**Acolyte porte le sac.** Vos projets, vos conversations, votre contexte : tout vous suit sur votre téléphone, où que vous soyez. Vous lancez une idée dans le bus, Claude travaille sur votre serveur, et le résultat vous attend sur votre PC en rentrant. Une seule mémoire, trois appareils, zéro friction.
+
+Et contrairement à tout ce que vous connaissez : **rien ne passe par nous.** Pas de cloud tiers, pas d'abonnement caché, pas de données qui voyagent chez un inconnu. Votre compte Claude, votre petit serveur à 5 €/mois, votre réseau privé chiffré. Vous possédez chaque brique.
+
+## L'installation ? C'est lui qui travaille.
+
+Un seul fichier à télécharger. Double-clic. Et un **technicien automatisé** prend le relais, en 19 étapes limpides :
+
+🔍 Il **audite** votre PC sans rien toucher — puis vous montre son plan, et c'est **vous** qui validez
+💾 Il **sauvegarde avant chaque geste** — datée, restaurable, toujours
+🖥️ Il **monte votre serveur** de A à Z : l'application, la base, le service, les sauvegardes nocturnes
+🔐 Il **tisse votre réseau privé** (Tailscale) entre PC, serveur et téléphone — avec HTTPS
+🧠 Il **relie votre compte Claude** — le token ne s'affiche jamais, ne voyage jamais en clair
+📱 Il **équipe votre téléphone** : scannez un QR, et une vraie application s'installe sur votre écran d'accueil
+🔥 Il **éprouve le tout** par un stress test complet — des dizaines de vérifications, **sans consommer un centime de votre abonnement**
+🔑 Et il vous **remet les clés**, avec un tuto qui vous fait pratiquer les gestes du quotidien
+
+À la fin, tout fonctionne. L'ordinateur, le serveur, le téléphone. C'est sa définition de « terminé ».
+
+## Ensuite, il ne vous lâche plus
+
+- **Mises à jour en un clic** depuis VS Code — un paquet léger, sauvegarde automatique avant, **retour arrière automatique** si quoi que ce soit cloche (oui, on l'a testé en cassant un vrai serveur exprès)
+- **Un docteur intégré** qui ausculte tout le système à la demande et vous dit ce qui va — et ce qui ne va pas
+- **Une assistance en deux clics** : diagnostic automatique, rapport nettoyé de tout secret, que **vous** relisez avant d'envoyer
+- **Un tuto rejouable** à volonté — rien à mémoriser, jamais
+
+## Forgé au feu, pas en laboratoire
+
+Cette version n'est pas sortie d'un « ça devrait marcher » : elle a été **installée de bout en bout par un utilisateur tiers, sur une machine vierge**, cycle complet vérifié téléphone en main — et chaque accroc rencontré en route est devenu un test qui protège les suivants. C'est la règle de la maison : *aucun bug vécu ne survit.*
+
+## Ce qu'il vous faut
+
+| | |
+|---|---|
+| 🖥️ | Un PC **Windows 10/11** |
+| 📱 | Un téléphone **Android** |
+| 🧠 | Un compte **Claude** avec abonnement (Pro/Max) |
+| ☁️ | Un petit **VPS** Ubuntu/Debian (~5-7 €/mois — l'installateur vous guide) |
+| 🔐 | Un compte **Tailscale** (gratuit, 2 minutes) |
+
+L'installateur vérifie tout le reste — et installe ce qui manque.
+
+## Télécharger
+
+**[→ Dernière version, un seul fichier](../../releases/latest)**
+
+> ⚠️ **L'avertissement bleu de Windows est normal.** Acolyte n'est pas signé numériquement : au premier double-clic, SmartScreen dira « Windows a protégé votre ordinateur ». Cliquez **« Informations complémentaires »** puis **« Exécuter quand même »**. Cet avertissement apparaît pour toute application indépendante — il ne dit rien de la sûreté du programme.
+
+---
+
+<p align="center"><i>Un souci ? <a href="../../issues">Ouvrez un ticket</a> — l'assistance intégrée le pré-remplit pour vous, sans jamais y glisser un secret.</i></p>
