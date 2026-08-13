@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="140" alt="Acolyte"></p>
+
 # Acolyte
 
 **Votre Claude, dans votre poche — sur VOTRE serveur.**
