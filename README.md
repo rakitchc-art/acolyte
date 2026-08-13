@@ -4,9 +4,7 @@
 
 <p align="center"><b>Votre Claude, dans votre poche.<br>Sur VOTRE serveur. Avec VOS données. Point.</b></p>
 
-<p align="center">
-  <a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/rakitchc-art/acolyte?label=t%C3%A9l%C3%A9charger&color=2563EB&style=for-the-badge" alt="Télécharger"></a>
-</p>
+<h3 align="center">⬇️&nbsp;&nbsp;<a href="../../releases/latest">Télécharger l'installateur</a></h3>
 
 ---
 
